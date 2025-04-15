@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>สมัครสมาชิก</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-md mx-auto bg-white p-6 rounded shadow">
+    <h2 class="text-xl font-semibold mb-4">สมัครสมาชิก</h2>
+    <input id="name" placeholder="ชื่อ" class="input" />
+    <input id="surname" placeholder="นามสกุล" class="input" />
+    <input id="phone" placeholder="เบอร์โทร" class="input" />
+    <input id="bank" placeholder="ธนาคาร" class="input" />
+    <input id="account" placeholder="เลขบัญชี" class="input" />
+    <input id="email" type="email" placeholder="อีเมล" class="input" />
+    <input id="password" type="password" placeholder="รหัสผ่าน" class="input" />
+    <button onclick="register()" class="btn bg-blue-500">สมัคร</button>
+    <p id="message" class="mt-2 text-sm text-red-500"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
