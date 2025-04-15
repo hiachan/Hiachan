@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>เข้าสู่ระบบ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-md mx-auto bg-white p-6 rounded shadow">
+    <h2 class="text-xl font-semibold mb-4">เข้าสู่ระบบ</h2>
+    <input id="email" type="email" placeholder="อีเมล" class="input" />
+    <input id="password" type="password" placeholder="รหัสผ่าน" class="input" />
+    <button onclick="login()" class="btn bg-green-500">เข้าสู่ระบบ</button>
+    <p id="message" class="mt-2 text-sm text-red-500"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
